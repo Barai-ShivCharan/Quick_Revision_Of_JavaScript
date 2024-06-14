@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest-Operatorst</title>
+    <script>
+        function sum(name, course, ...arg) {//...This is REst operators it is laways in last ...args are optional and can be used to pass any number of arguments. The rest operator is a special keyword that helps us to accept an arbitrary number of arguments in our function.</p><br></div>`
+
+            document.write(`hello ${name}of ${course}:`);
+            console.log(arguments)
+            let sum = 0;
+            for (let i in arg) {
+                sum += arg[i]
+            }
+            document.write(sum + "<br>")
+        }
+        sum("Yahoo Baba", "Bachelor's in CS", 20, 30, 40)
+        sum("Ramkumar", "Bachelor's in CSIT", 20, 40, 50, 60, 70)
+        // sum(20, 30)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
